@@ -26,7 +26,7 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({
 
       // Request media stream directly inside user gesture
       const stream = await navigator.mediaDevices.getUserMedia({
-        video: { facingMode: 'environment' },
+        video: true,
       });
 
       // Stop test stream immediately so CameraViewport can acquire it cleanly
