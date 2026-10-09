@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="128" fill="#090d16"/>
+  <rect x="96" y="80" width="320" height="352" rx="24" fill="#0f172a" stroke="#10b981" stroke-width="8"/>
+  <!-- Book spine & pages -->
+  <line x1="256" y1="80" x2="256" y2="432" stroke="#10b981" stroke-width="6" stroke-dasharray="8 8"/>
+  <line x1="136" y1="140" x2="220" y2="140" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="136" y1="180" x2="220" y2="180" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="136" y1="220" x2="200" y2="220" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  
+  <line x1="292" y1="140" x2="376" y2="140" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="292" y1="180" x2="376" y2="180" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="292" y1="220" x2="356" y2="220" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Optical laser scan line -->
+  <line x1="80" y1="280" x2="432" y2="280" stroke="#34d399" stroke-width="6"/>
+  <!-- Scanner corner brackets -->
+  <path d="M 120 120 L 120 100 L 140 100" stroke="#34d399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 392 120 L 392 100 L 372 100" stroke="#34d399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 120 392 L 120 412 L 140 412" stroke="#34d399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 392 392 L 392 412 L 372 412" stroke="#34d399" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

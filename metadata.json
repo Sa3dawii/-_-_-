@@ -1,0 +1,10 @@
+{
+  "name": "Remix نسخه احتياطية بتاريخ 9/10 مستقره SmartBook Scanner",
+  "description": "ماسح ضوئي ذكي فائق الوضوح للكتب والمذكرات الجامعية مع التقاط آلي وتحديد حواف وضغط نصوص ومشاركة PDF فورية.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
