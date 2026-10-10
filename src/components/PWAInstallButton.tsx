@@ -21,12 +21,13 @@ export const PWAInstallButton: React.FC = () => {
   if (isInstallable) {
     return (
       <button
+        type="button"
         onClick={handleInstall}
-        className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-emerald-300 bg-emerald-950/60 hover:bg-emerald-900/80 border border-emerald-500/30 rounded-xl backdrop-blur transition active:scale-95"
-        title="تثبيت التطبيق على الشاشة الرئيسية"
+        className="flex items-center gap-1 px-2 sm:px-2.5 py-1 text-[10px] sm:text-xs font-bold text-emerald-300 bg-emerald-950/70 hover:bg-emerald-900/80 border border-emerald-500/40 rounded-lg backdrop-blur transition active:scale-95 whitespace-nowrap shrink-0 cursor-pointer"
+        title="تثبيت التطبيق على الشاشة الرئيسية بدون متجر"
       >
-        <Download className="w-3.5 h-3.5" />
-        <span>تثبيت PWA</span>
+        <Download className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
+        <span className="whitespace-nowrap">تثبيت التطبيق</span>
       </button>
     );
   }
@@ -35,12 +36,13 @@ export const PWAInstallButton: React.FC = () => {
     return (
       <>
         <button
+          type="button"
           onClick={() => setShowIOSGuide(true)}
-          className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-emerald-300 bg-emerald-950/60 hover:bg-emerald-900/80 border border-emerald-500/30 rounded-xl backdrop-blur transition active:scale-95"
+          className="flex items-center gap-1 px-2 sm:px-2.5 py-1 text-[10px] sm:text-xs font-bold text-emerald-300 bg-emerald-950/70 hover:bg-emerald-900/80 border border-emerald-500/40 rounded-lg backdrop-blur transition active:scale-95 whitespace-nowrap shrink-0 cursor-pointer"
           title="تثبيت التطبيق على الآيفون"
         >
-          <Smartphone className="w-3.5 h-3.5" />
-          <span>تثبيت في الآيفون</span>
+          <Smartphone className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
+          <span className="whitespace-nowrap">تثبيت التطبيق</span>
         </button>
 
         {showIOSGuide && (

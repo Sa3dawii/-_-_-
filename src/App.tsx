@@ -425,7 +425,7 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col h-screen w-screen bg-slate-950 text-slate-100 overflow-hidden font-sans select-none">
+    <div className="fixed inset-0 flex flex-col w-full h-full h-[100dvh] max-h-[100dvh] bg-slate-950 text-slate-100 overflow-hidden overscroll-none touch-none font-sans select-none">
       {/* Top Header Bar */}
       <HeaderBar
         pageCount={pages.length}
