@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="google" content="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <title>سكانر مكتبة الامتياز - ماسح الكتب الذكي</title>
+    <title>مكتبة الامتياز - مصور الكتب الجامعية الآلي</title>
     <meta name="description" content="صُمم هذا النظام لمساعدة طلاب مكتبة الامتياز الأزهرية علي تصوير كتبهم الجامعية الورقية في دقائق وإرسالها مباشرة لمكتبة الامتياز لتلخيصها." />
-    <meta property="og:title" content="سكانر مكتبة الامتياز - ماسح الكتب الذكي" />
+    <meta property="og:title" content="مكتبة الامتياز - مصور الكتب الجامعية الآلي" />
     <meta property="og:description" content="صُمم هذا النظام لمساعدة طلاب مكتبة الامتياز الأزهرية علي تصوير كتبهم الجامعية الورقية في دقائق وإرسالها مباشرة لمكتبة الامتياز لتلخيصها." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="سكانر مكتبة الامتياز - ماسح الكتب الذكي" />
+    <meta name="twitter:title" content="مكتبة الامتياز - مصور الكتب الجامعية الآلي" />
     <meta name="twitter:description" content="صُمم هذا النظام لمساعدة طلاب مكتبة الامتياز الأزهرية علي تصوير كتبهم الجامعية الورقية في دقائق وإرسالها مباشرة لمكتبة الامتياز لتلخيصها." />
     <meta name="theme-color" content="#090d16" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="BookScanner" />
+    <meta name="apple-mobile-web-app-title" content="مكتبة الامتياز" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="icon" type="image/svg+xml" href="./icon.svg" />
     <link rel="apple-touch-icon" href="./icon.svg" />
@@ -25,7 +25,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500/30 overflow-hidden h-[100dvh] w-screen select-none overscroll-none touch-manipulation">
-    <div id="root"></div>
+    <div id="root">
+      <div style="position:fixed;inset:0;background:#090d16;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f8fafc;font-family:'Tajawal',sans-serif;user-select:none;">
+        <div style="flex:1;display:flex;align-items:center;justify-content:center;">
+          <img src="./icon.svg" alt="شعار" style="width:110px;height:110px;" />
+        </div>
+        <div style="padding-bottom:48px;text-align:center;">
+          <div style="font-size:19px;font-weight:800;color:#ffffff;letter-spacing:-0.02em;">مكتبة الامتياز</div>
+          <div style="font-size:12px;font-weight:600;color:#34d399;margin-top:4px;">مصور الكتب الجامعية الآلي</div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>

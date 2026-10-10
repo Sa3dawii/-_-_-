@@ -61,11 +61,11 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({
             <BookOpen className="w-6 h-6" />
           </div>
           <div>
-            <span className="text-[11px] font-semibold text-emerald-400 tracking-wider uppercase block">
-              مكتبة الامتياز الأزهرية
+            <span className="text-xs font-bold text-emerald-400 tracking-wider uppercase block">
+              مكتبة الامتياز
             </span>
             <h2 className="text-xl sm:text-2xl font-black text-white">
-              مرحباً بك في مصور الكتب الجامعية
+              مصور الكتب الجامعية الآلي
             </h2>
           </div>
         </div>

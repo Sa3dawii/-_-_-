@@ -204,14 +204,17 @@ export default function App() {
             };
 
             await storageService.updatePage(replacedPage);
-            setPages((prev) => {
-              const copy = [...prev];
-              copy[targetIndex] = replacedPage;
-              return copy;
-            });
+            const updated = [...pages];
+            updated[targetIndex] = replacedPage;
+            setPages(updated);
 
             setRetakeTargetPage(null);
-            setBookMode('landscape');
+            if (replacedPage.isFrontCover || replacedPage.isBackCover) {
+              setBookMode('portrait');
+            } else {
+              setBookMode('landscape');
+            }
+            setSelectedPage(replacedPage);
             return;
           }
         }
