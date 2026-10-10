@@ -58,6 +58,7 @@ export default function App() {
   const [isExportOpen, setIsExportOpen] = useState(false);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [showFrameHint, setShowFrameHint] = useState(false);
+  const [showAppSplash, setShowAppSplash] = useState(true);
   const [isWelcomeOpen, setIsWelcomeOpen] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       return localStorage.getItem('al_imtiaz_camera_permission_granted') !== 'true';
@@ -65,6 +66,14 @@ export default function App() {
     return true;
   });
   const snapTriggerRef = useRef<(() => Promise<void>) | null>(null);
+
+  // Dismiss brand splash after smooth launch
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowAppSplash(false);
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Display tips on spread_prompt and dismiss when the user touches the screen
   useEffect(() => {
@@ -645,6 +654,33 @@ export default function App() {
         isOpen={isWelcomeOpen}
         onPermissionGranted={() => setIsWelcomeOpen(false)}
       />
+
+      {/* Brand Splash Screen on Initial App Open */}
+      {showAppSplash && (
+        <div
+          dir="rtl"
+          className="fixed inset-0 z-[100] bg-[#090d16] flex flex-col items-center justify-between py-12 px-6 select-none animate-in fade-in duration-300"
+        >
+          <div className="w-full flex-1 flex items-center justify-center">
+            <div className="relative flex items-center justify-center">
+              <div className="absolute w-36 h-36 bg-emerald-500/15 rounded-full blur-2xl animate-pulse pointer-events-none" />
+              <img
+                src="./icon.svg"
+                alt="شعار"
+                className="w-28 h-28 object-contain relative z-10 drop-shadow-xl"
+              />
+            </div>
+          </div>
+          <div className="text-center pb-8 flex flex-col items-center gap-1.5 z-10">
+            <div className="text-xl sm:text-2xl font-black text-white tracking-tight">
+              مكتبة الامتياز
+            </div>
+            <div className="text-xs sm:text-sm font-bold text-emerald-400">
+              مصور الكتب الجامعية الآلي
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
