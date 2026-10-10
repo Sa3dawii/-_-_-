@@ -29,16 +29,9 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({
           <BookOpen className="w-4 h-4" />
         </div>
         <div className="min-w-0 overflow-hidden">
-          <div className="flex items-center gap-1.5">
-            <span className="font-extrabold text-xs sm:text-sm tracking-tight text-white block truncate whitespace-nowrap leading-tight">
-              مكتبة الامتياز
-            </span>
-            {pageCount > 0 && (
-              <span className="text-[9px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-bold px-1.5 py-0.2 rounded shrink-0">
-                {pageCount} ص
-              </span>
-            )}
-          </div>
+          <span className="font-extrabold text-xs sm:text-sm tracking-tight text-white block truncate whitespace-nowrap leading-tight">
+            مكتبة الامتياز
+          </span>
           <span className="text-[10px] text-emerald-400 font-medium block truncate whitespace-nowrap leading-tight">
             مصور الكتب الجامعية الآلي
           </span>
